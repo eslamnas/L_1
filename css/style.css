@@ -1,0 +1,60 @@
+/* stat varibles */
+:root {
+     --mai-color:#19c8fa ;
+     --transparent-color: rgb(15 166 143 /80%)
+}
+/* end varibles */
+/* start global rules */
+html {
+     scroll-behavior: smooth;
+}
+* {
+     margin: 0;
+     padding: 0;
+     -moz-box-sizing: border-box;
+     -webkit-box-sizing: border-box;
+     box-sizing: border-box;
+}
+body {
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     background: darkcyan;
+}
+.container {
+     padding-left: 5px;
+     padding-right: 5px;
+     margin-left: auto;
+     margin-right: auto;
+}
+/* small */
+@media (min-width:760px) {
+     .container {
+          width: 750px;
+     }
+}
+/* medium  */
+@media (min-width:992px) {
+     .container {
+          width: 990px;
+     }
+}
+/* large */
+@media (min-width:1200px) {
+     .container {
+          width: 1170px;
+     }
+}
+a {
+     text-decoration: none;
+     font-weight: bold;
+     color: black;
+     list-style: none;
+
+}
+/* stat header */
+header {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+
+}
+/* end header */
