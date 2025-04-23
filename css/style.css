@@ -17,7 +17,7 @@ html {
 }
 body {
      font-family: Verdana, Geneva, Tahoma, sans-serif;
-     background: darkcyan;
+     background-color: #025c66;
 }
 .container {
      padding-left: 5px;
@@ -46,15 +46,221 @@ body {
 a {
      text-decoration: none;
      font-weight: bold;
-     color: black;
      list-style: none;
 
 }
 /* stat header */
+
 header {
+     padding: 20px 0;
+     color: white;
+     
+}
+header .logo a {
+     
+}
+
+header .container {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+header .container nav a {
+color: white;
+margin: 0 15px;
+}
+
+header .container button {
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  background-color:#19c8fa;
+  border: none;
+}
+/* end header */
+/*start main  */
+main .container {
+     padding: 60px 0;
+     color: white;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     flex-wrap: wrap;
+}
+main .container .main-text {
+flex: 1;
+max-width: 50%;
+}
+main .container .main-text p {
+     margin-bottom: 10px;
+
+}
+main .container .main-text h1 {
+     font-size: 42px;
+     margin-bottom: 60px;
+}
+main .container .search-box {
+     display: flex;
+     max-width: 400px;
+}
+main .container .search-box input {
+     padding: 10px;
+     flex: 1;
+     border: none;
+     border-radius: 5px 0 0 5px;
+}
+main .container .search-box button {
+     padding: 10px 20px ;
+     border: none;
+     cursor: pointer;
+     border-radius: 5px 0 0 5px;
+     color: white;
+     background-color: var(--mai-color);
+}
+main .container .main-img {
+     max-width: 100%;
+     border-radius: 10px;
+     transform: rotate(-5deg);
+}
+/* end main */
+/* start services */
+.services {
+     background-color: white;
+     padding: 60px 0;
+     text-align: center;
+}
+.service-grid {
+     display: flex;
+     grid-template-columns: repeat(auto-fil,minmax(220px,1fr));
+     gap: 30px;
+}
+.service-card {
+     background-color: #f8F8F8;
+     padding: 30px 20px;
+     border-radius: 10px;
+     transition: 0.3s;
+     cursor: pointer;
+}
+.service-card:hover {
+     background-color: #e6f5f4;
+}
+.service-card img {
+     width: 40px;
+     margin-bottom: 15px;
+}
+.service-card h3{
+font-size: 20px;
+color: #025c66;
+margin-bottom: 10px;
+}
+.service-card p {
+     font-size: 14px;
+     color: #555;
+}
+/* end services */
+/* start about */
+.about {
+     padding: 60px 0;
+     background-color: white;
+}
+.about-content {
      display: flex;
      align-items: center;
      justify-content: space-between;
+     flex-wrap: wrap;
+}
+.about-text {
+     flex: 1;
+     max-width: 50%;
+}
+.about-text p {
+color: #888;
+margin-bottom: 10px;
+}
+.about-text h2 {
+     color: #024c66;
+     font-size: 28px;
+     margin-bottom: 15px;
+} 
+.about-text .about-buttons {
+     margin-top: 20px;
+}
+.about-text .about-buttons .btn {
+     background-color: #f0f0f0;
+     border: none;
+     padding: 10px 18px;
+     margin-right: 10px;
+     border-radius: 5px;
+     cursor: pointer;
+     color: #025c66;
+     font-weight: bold;
+     transition: 0.3s;
+} 
+.about-text .about-buttons .active {
+     background-color: #025c66;
+     color: white;
+     
+}
+
+.about-text .about-buttons .btn:hover,
+.about-text .about-buttons .btn .active:hover {
+     background-color: #00d2c3;
+     color: white;
+     border-bottom: 1px solid var(--mai-color)
+}
+
+.about-img {
+     flex: 1;
+     text-align: center;
+}
+.about-img img {
+     max-width: 100%;
+     border-radius: 10px;
+}
+/* end about */
+/* start features */
+.features {
+     padding: 60px 0;
+     background-color: #f9f9f9;
+     text-align: center;
+}
+.features-content {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     display: flex;
+     flex-wrap: wrap;
+}
+.features-text {
+     flex: 1;
+     max-width: 50%;
+     padding-right: 20px;
+}
+.features-text p {
+     margin-bottom: 20px;
+     color: #444;
+}
+.feature-list {
+     list-style: none;
+     padding: 0;
 
 }
-/* end header */
+.feature-list li {
+     margin-bottom: 10px;
+     font-size: 15px;
+     color: #025c66;
+     position: relative;
+     
+     
+   
+}
+.feature-list li::before {
+     content: "✔";
+     position: absolute;
+     left: 0;
+     color: #00d2c3;
+     font-weight: bold;
+}
+
+/* end features */
